@@ -1,0 +1,26 @@
+<html>
+<head><title></title></head>
+
+<body>
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<h1>Bulk Uploader of Songs</h1>
+{% if form %}
+    <form enctype="multipart/form-data" method="post">{% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+    </form>
+{% elif status %}
+    <a href="{% url "admin:bulk" %}">Go back</a>
+    {% for line in message %}
+        <p>{{ line }}</p>
+    {% endfor %}
+{% else %}
+    <p>Didn't work</p>
+    <a href="{% url "admin:bulk" %}">Click Here to Try Again</a>
+{% endif %}
+{% endblock content %}
+
+</body>
+</html>

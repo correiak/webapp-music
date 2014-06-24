@@ -5,7 +5,8 @@
     margin:auto;
 }
 
-#banner_title_img{
+#banner_title_img
+{
     margin-left:20px;
 }
 
@@ -19,6 +20,7 @@
     background-image:url("../imgs/table_bg_1_red.svg");
     height: 50px;
     font-size: 32px;
+    text-shadow:1px 1px black;
     color:white;
 }
 
@@ -59,11 +61,22 @@ table th
     border-width:1px;
     color:white;
     width:500px;
+    text-shadow:1px 1px black;
+    font-weight:lighter;
+    font-size:24px;
 }
 
 table td
 {
     border-style:solid;
     border-width:1px;
-    width:500px;
+}
+
+td.headings
+{
+    width:150px;
+}
+td.details
+{
+    text-align:center;
 }

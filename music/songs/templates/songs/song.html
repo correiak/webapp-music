@@ -6,22 +6,22 @@
     
         <table>
             <tr>
-                <th>{{ song.title }}</th>            
+                <th colspan="2">{{ song.title }}</th>            
             </tr>
                 <tr>
-                    <td>Title</td><td>{{song.title}}</td>
+                    <td class="headings">Title</td><td class="details">{{song.title}}</td>
                 </tr>
                 <tr>
-                    <td>Author</td><td>{{song.author}}</td>
+                    <td class="headings">Author</td><td class="details">{{song.author}}</td>
                 </tr>
                 <tr>
-                    <td>Key Signature</td><td>{{song.key_sig}}</td>
+                    <td class="headings">Key Signature</td><td class="details">{{song.key_sig}}</td>
                 </tr>
                 <tr>
-                    <td>Theme</td><td>{{song.theme}}</td>
+                    <td class="headings">Theme</td><td class="details">{{song.theme}}</td>
                 </tr>
                 <tr>
-                    <td>Source</td><td>{{song.source}}</td>
+                    <td class="headings">Source</td><td class="details">{{song.source}}</td>
                 </tr>            
         </table>
 {% endblock content %}
